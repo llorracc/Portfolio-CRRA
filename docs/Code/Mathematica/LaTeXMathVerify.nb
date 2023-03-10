@@ -1,0 +1,468 @@
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], ";"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Calculate", " ", 
+    RowBox[{
+     SubscriptBox["\[DoubleStruckCapitalE]", "t"], "[", 
+     RowBox[{
+      RowBox[{"Exp", "[", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "-", "\[Rho]"}], ")"}], " ", "\[Stigma]", " ", 
+        "\[Phi]tp1"}], "]"}], ";", " ", 
+      RowBox[{
+      "part", " ", "of", " ", "formula", " ", "for", " ", "expected", " ", 
+       RowBox[{"utility", " ", "\\", "eqref"}], 
+       RowBox[{"{", 
+        RowBox[{"eq", ":", "exputil"}], "}"}], " ", "in", " ", "handout"}]}], 
+     " "}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"\[DoubleStruckCapitalE]t\[CapitalPhi]tp1Part", " ", "=", " ", 
+    RowBox[{"Integrate", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Exp", "[", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"1", "-", "\[Rho]"}], ")"}], "\[Stigma]", " ", 
+         RowBox[{"Log", "[", "\[CapitalPhi]tp1", "]"}]}], "]"}], " ", 
+       RowBox[{"PDF", "[", 
+        RowBox[{
+         RowBox[{"LogNormalDistribution", "[", 
+          RowBox[{
+           RowBox[{"\[CurlyPhi]", "-", 
+            RowBox[{
+             SuperscriptBox["\[Sigma]", "2"], "/", "2"}]}], ",", "\[Sigma]"}],
+           "]"}], ",", "\[CapitalPhi]tp1"}], "]"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\[CapitalPhi]tp1", ",", "0", ",", "\[Infinity]"}], "}"}]}], 
+     "]"}]}], ";"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ SuperscriptBox["\[ExponentialE]", 
+  RowBox[{
+   FractionBox["1", "2"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", "1"}], "+", "\[Rho]"}], ")"}], " ", "\[Stigma]", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "2"}], " ", "\[CurlyPhi]"}], "+", 
+     RowBox[{
+      SuperscriptBox["\[Sigma]", "2"], " ", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", "1"}], "+", "\[Rho]"}], ")"}], " ", "\[Stigma]"}]}], 
+       ")"}]}]}], ")"}]}]]], "Print"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Expectation", "[", 
+   RowBox[{
+    RowBox[{"Exp", "[", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "-", "\[Rho]"}], ")"}], "\[Stigma]", " ", 
+      RowBox[{"Log", "[", "\[CapitalPhi]tp1", "]"}]}], "]"}], ",", " ", 
+    RowBox[{"\[CapitalPhi]tp1", "\[Distributed]", 
+     RowBox[{"LogNormalDistribution", "[", 
+      RowBox[{
+       RowBox[{"\[CurlyPhi]", "-", 
+        RowBox[{
+         SuperscriptBox["\[Sigma]", "2"], "/", "2"}]}], ",", "\[Sigma]"}], 
+      "]"}]}]}], "]"}], ";"}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ SuperscriptBox["\[ExponentialE]", 
+  RowBox[{
+   FractionBox["1", "2"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", "1"}], "+", "\[Rho]"}], ")"}], " ", "\[Stigma]", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "2"}], " ", "\[CurlyPhi]"}], "+", 
+     RowBox[{
+      SuperscriptBox["\[Sigma]", "2"], " ", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", "1"}], "+", "\[Rho]"}], ")"}], " ", "\[Stigma]"}]}], 
+       ")"}]}]}], ")"}]}]]], "Print"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"log\[DoubleStruckCapitalE]t\[CapitalPhi]tp1Part", " ", "=", " ", 
+   RowBox[{"Simplify", "[", 
+    RowBox[{"Log", "[", "\[DoubleStruckCapitalE]t\[CapitalPhi]tp1Part", "]"}],
+     "]"}]}], ";"}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", "2"], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", "1"}], "+", "\[Rho]"}], ")"}], " ", "\[Stigma]", " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "2"}], " ", "\[CurlyPhi]"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Sigma]", "2"], " ", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "1"}], "+", "\[Rho]"}], ")"}], " ", "\[Stigma]"}]}], 
+      ")"}]}]}], ")"}]}]], "Print"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Simplify", " ", "the", " ", "expression", " ", "further"}], " ", 
+   "*)"}], "\n", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Simpler4Sub", " ", "=", " ", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "-", "\[Rho]"}], ")"}], 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"\[CurlyPhi]", " ", "\[Stigma]"}], " ", "-", 
+        RowBox[{"\[Stigma]", 
+         RowBox[{"(", 
+          RowBox[{"1", "-", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"1", "-", "\[Rho]"}], ")"}], "\[Stigma]"}]}], ")"}], 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["\[Sigma]", "2"], "/", "2"}], ")"}]}]}], ")"}]}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Simpler5Sub", " ", "=", " ", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "-", "\[Rho]"}], ")"}], 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"\[CurlyPhi]", " ", "\[Stigma]"}], " ", "-", 
+        RowBox[{"\[Stigma]", 
+         RowBox[{"(", 
+          RowBox[{"1", "-", "\[Stigma]"}], ")"}], 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["\[Sigma]", "2"], "/", "2"}], ")"}]}], "-", 
+        RowBox[{"\[Rho]", " ", 
+         SuperscriptBox["\[Stigma]", "2"], 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["\[Sigma]", "2"], "/", "2"}], ")"}]}]}], ")"}]}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Simpler6Sub", " ", "=", " ", 
+     RowBox[{
+      RowBox[{"-", 
+       RowBox[{"(", 
+        RowBox[{"\[Rho]", "-", "1"}], ")"}]}], 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"\[CurlyPhi]", " ", "\[Stigma]"}], " ", "-", 
+        RowBox[{"\[Stigma]", 
+         RowBox[{"(", 
+          RowBox[{"1", "-", "\[Stigma]"}], ")"}], 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["\[Sigma]", "2"], "/", "2"}], ")"}]}], "-", 
+        RowBox[{"\[Rho]", " ", 
+         SuperscriptBox["\[Stigma]", "2"], 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["\[Sigma]", "2"], "/", "2"}], ")"}]}]}], ")"}]}]}], 
+    ";"}]}]}]], "Input",
+ InitializationCell->True],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Verify", " ", "that", " ", "the", " ", "simplification", " ", "is", " ", 
+    "correct"}], " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{"Simplify", "[", 
+    RowBox[{
+    "log\[DoubleStruckCapitalE]t\[CapitalPhi]tp1Part", " ", "\[Equal]", " ", 
+     "Simpler6Sub"}], "]"}], ";"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData["True"], "Print"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Using", " ", "this", " ", "result"}], ",", " ", 
+    RowBox[{
+     RowBox[{"now", " ", "compute", " ", "expected", " ", "utility"}], ";", 
+     " ", 
+     RowBox[{
+     "see", " ", "handout", " ", "for", " ", "underlying", " ", 
+      "formula"}]}]}], " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{"\[DoubleStruckCapitalE]utp1", " ", "=", " ", 
+    RowBox[{
+     RowBox[{"Exp", "[", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"1", "-", "\[Rho]"}], ")"}], "\[Stigma]", 
+       RowBox[{"(", 
+        RowBox[{"1", "-", "\[Stigma]"}], ")"}], 
+       RowBox[{
+        SuperscriptBox["\[Sigma]", "2"], "/", "2"}]}], "]"}], " ", 
+     RowBox[{
+     "Exp", "[", "log\[DoubleStruckCapitalE]t\[CapitalPhi]tp1Part", "]"}]}]}],
+    ";"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ SuperscriptBox["\[ExponentialE]", 
+  RowBox[{
+   RowBox[{
+    FractionBox["1", "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{"1", "-", "\[Rho]"}], ")"}], " ", 
+    SuperscriptBox["\[Sigma]", "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{"1", "-", "\[Stigma]"}], ")"}], " ", "\[Stigma]"}], "+", 
+   RowBox[{
+    FractionBox["1", "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "1"}], "+", "\[Rho]"}], ")"}], " ", "\[Stigma]", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "\[CurlyPhi]"}], "+", 
+      RowBox[{
+       SuperscriptBox["\[Sigma]", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "1"}], "+", "\[Rho]"}], ")"}], " ", "\[Stigma]"}]}], 
+        ")"}]}]}], ")"}]}]}]]], "Print"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"log\[DoubleStruckCapitalE]utp1", " ", "=", " ", 
+   RowBox[{"\[DoubleStruckCapitalE]utp1", "[", 
+    RowBox[{"[", "2", "]"}], "]"}]}], ";", " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+     "Extracts", " ", "the", " ", "exponent", " ", "on", " ", 
+      "\[ExponentialE]"}], ";", " ", 
+     RowBox[{"for", " ", "some", " ", "reason"}]}], ",", " ", 
+    RowBox[{
+    "directly", " ", "taking", " ", "the", " ", "Log", " ", "does", " ", 
+     "not", " ", "obtain", " ", "the", " ", "exponent"}]}], " ", 
+   "*)"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   FractionBox["1", "2"], " ", 
+   RowBox[{"(", 
+    RowBox[{"1", "-", "\[Rho]"}], ")"}], " ", 
+   SuperscriptBox["\[Sigma]", "2"], " ", 
+   RowBox[{"(", 
+    RowBox[{"1", "-", "\[Stigma]"}], ")"}], " ", "\[Stigma]"}], "+", 
+  RowBox[{
+   FractionBox["1", "2"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", "1"}], "+", "\[Rho]"}], ")"}], " ", "\[Stigma]", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "2"}], " ", "\[CurlyPhi]"}], "+", 
+     RowBox[{
+      SuperscriptBox["\[Sigma]", "2"], " ", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", "1"}], "+", "\[Rho]"}], ")"}], " ", "\[Stigma]"}]}], 
+       ")"}]}]}], ")"}]}]}]], "Print"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Verify", " ", "that", " ", "a", " ", "simpler", " ", "expression", " ", 
+     RowBox[{"(", 
+      RowBox[{"derived", " ", "in", " ", "the", " ", "handout"}], ")"}], " ", 
+     "is", " ", "correct"}], " ", "*)"}], "\n", 
+   RowBox[{"Simplify", "[", 
+    RowBox[{"log\[DoubleStruckCapitalE]utp1", " ", "\[Equal]", " ", 
+     RowBox[{
+      RowBox[{"-", 
+       RowBox[{"(", 
+        RowBox[{"\[Rho]", "-", "1"}], ")"}]}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"\[CurlyPhi]", " ", "\[Stigma]"}], " ", "-", " ", 
+        RowBox[{
+         SuperscriptBox["\[Stigma]", "2"], " ", "\[Rho]", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["\[Sigma]", "2"], "/", "2"}], ")"}]}]}], ")"}]}]}], 
+    "]"}], "]"}], ";"}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData["True"], "Print"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Calculate", " ", "the", " ", "approximation", " ", "to", " ", "the", " ", 
+    "optimal", " ", "portfolio", " ", "share"}], " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Assuming", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\[Stigma]", ">", "0"}], ",", 
+        RowBox[{"\[Rho]", ">", "0"}], ",", 
+        RowBox[{"\[CurlyPhi]", ">", "0"}]}], "}"}], ",", 
+      RowBox[{"Maximize", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"\[CurlyPhi]", " ", "\[Stigma]"}], " ", "-", " ", 
+           RowBox[{
+            SuperscriptBox["\[Stigma]", "2"], " ", "\[Rho]", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["\[Sigma]", "2"], "/", "2"}], ")"}]}]}], ",", 
+          RowBox[{"\[CurlyPhi]", ">", "0"}], ",", 
+          RowBox[{"\[Sigma]", ">", "0"}], ",", 
+          RowBox[{"\[Rho]", ">", "0"}]}], "}"}], ",", "\[Stigma]"}], "]"}]}], 
+     "]"}], "[", 
+    RowBox[{"[", "2", "]"}], "]"}], ";"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\[Stigma]", "\[Rule]", 
+   TagBox[GridBox[{
+      {"\[Piecewise]", GridBox[{
+         {
+          FractionBox["\[CurlyPhi]", 
+           RowBox[{"\[Rho]", " ", 
+            SuperscriptBox["\[Sigma]", "2"]}]], 
+          RowBox[{
+           RowBox[{"\[CurlyPhi]", ">", "0"}], "&&", 
+           RowBox[{"\[Sigma]", ">", "0"}], "&&", 
+           RowBox[{"\[Rho]", ">", "0"}]}]},
+         {"Indeterminate", 
+          TagBox["True",
+           "PiecewiseDefault",
+           AutoDelete->True]}
+        },
+        AllowedDimensions->{2, Automatic},
+        Editable->True,
+        GridBoxAlignment->{
+         "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, 
+          "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}},
+           "RowsIndexed" -> {}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.84]}, 
+            Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
+          "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}, "RowsIndexed" -> {}},
+        Selectable->True]}
+     },
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.35]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    "Piecewise",
+    DeleteWithContents->True,
+    Editable->False,
+    SelectWithContents->True,
+    Selectable->False]}], "}"}]], "Print"]
+}, Open  ]]
+},
+WindowSize->{1680, 1002},
+WindowMargins->{{Automatic, 132}, {Automatic, 0}},
+ShowSelection->True,
+Magnification:>FEPrivate`If[
+  FEPrivate`Equal[FEPrivate`$VersionNumber, 6.], 1.5, 1.5 Inherited],
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (October 6, \
+2011)",
+StyleDefinitions->"Default.nb"
+]
+

@@ -1,0 +1,844 @@
+<!DOCTYPE html> 
+<html lang="en" xml:lang="en" > 
+<head>
+  <title></title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="Portfolio-CRRA.css" /> 
+<meta name="src" content="Portfolio-CRRA.tex"> 
+</head><body 
+>
+  <div  
+class="centerline"><span 
+class="ecrm-2074">Portfolio Choice with CRRA Utility (Merton-Samuelson)</span> </div>
+<!--l. 9--><p class="indent" >  <a 
+href="#Xmerton:restat">Merton</a> (<a 
+href="#Xmerton:restat">1969</a>) and <a 
+href="#Xsamuelson:portfolio">Samuelson</a> (<a 
+href="#Xsamuelson:portfolio">1969</a>) study the optimal portfolio choice of a consumer with constant relative
+risk aversion <img 
+src="Portfolio-CRRA0x.svg" alt="ρ  " class="math";align="absmiddle">.<span class="footnote-mark"><a 
+href="Portfolio-CRRA2.html#fn1x0"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x1-2f1"></a>  
+At the end of period <img 
+src="Portfolio-CRRA2x.svg" alt="t  " class="math";align="absmiddle"> this consumer has assets <img 
+src="Portfolio-CRRA3x.svg" alt="at  " class="math";align="absmiddle">, and is deciding how much to invest in a risky
+asset<span class="footnote-mark"><a 
+href="Portfolio-CRRA3.html#fn2x0"><sup class="textsuperscript">2</sup></a></span><a 
+ id="x1-3f2"></a>  
+with a lognormally distributed return factor <img 
+src="Portfolio-CRRA4x.svg" alt="Rt+1   " class="math";align="absmiddle"> (its log return <img 
+src="Portfolio-CRRA5x.svg" alt="rt+1 = log Rt+1   " class="math";align="absmiddle"> is
+distributed normally), <img 
+src="Portfolio-CRRA6x.svg" alt="rt+1 = r + 𝜀t+1 ∼ 𝒩 (r,σ2)
+                        𝜀  " class="math";align="absmiddle"> for <img 
+src="Portfolio-CRRA7x.svg" alt="𝜀t+1 ∼  𝒩 (0,σ2)
+             𝜀  " class="math";align="absmiddle">. <a 
+href="https://www.econ2.jhu.edu/people/ccarroll/public/LectureNotes/MathFacts/MathFactsList#ELogNorm" ><img 
+src="Portfolio-CRRA8x.svg" alt="[ELogNorm  ]  " class="math";align="absmiddle"></a> reviews
+the well-known fact that in such a case the expectation of the return in levels (the ‘arithmetic’
+mean; see <a 
+href="https://www.econ2.jhu.edu/people/ccarroll/public/LectureNotes/MathFacts/MathFactsList#ArithmeticVSGeometric" ><img 
+src="Portfolio-CRRA9x.svg" alt="[ArithmeticVSGeometric    ]  " class="math";align="absmiddle"></a>) is <img 
+src="Portfolio-CRRA10x.svg" alt="            r+ (1∕2)σ2
+𝔼t [Rt+1 ] = e      𝜀   " class="math";align="absmiddle"> so that for small
+<img 
+src="Portfolio-CRRA11x.svg" alt="r  " class="math";align="absmiddle"> and <img 
+src="Portfolio-CRRA12x.svg" alt="σ2𝜀  " class="math";align="absmiddle"> we will have an excellent approximation: deﬁning <img 
+src="Portfolio-CRRA13x.svg" alt="r = r + (1∕2)σ2𝜀  " class="math";align="absmiddle">,
+it will be true that <img 
+src="Portfolio-CRRA14x.svg" alt="𝔼t[Rt+1 ] ≈ 1 + r " class="math";align="absmiddle"> (again see <a 
+href="https://www.econ2.jhu.edu/people/ccarroll/public/LectureNotes/MathFacts/MathFactsList#ArithmeticVSGeometric" ><img 
+src="Portfolio-CRRA15x.svg" alt="[ArithmeticVSGeometric    ]  " class="math";align="absmiddle"></a>).
+For the rest of this handout, we will usually treat this approximation as an exact
+relationship.<span class="footnote-mark"><a 
+href="Portfolio-CRRA4.html#fn3x0"><sup class="textsuperscript">3</sup></a></span><a 
+ id="x1-4f3"></a>  
+  <table 
+class="equation"><tr><td><a 
+ id="x1-5r1"></a>
+  <div class="math-display" >
+<img 
+src="Portfolio-CRRA21x.svg" alt="                 ≡r
+              ◜---◞◟--◝
+log 𝔼t[Rt+1] = r + 0.5σ2r
+                      2
+            = r◟-−-0◝.◜5σr◞
+                  =r
+                                                                                     
+                                                                                     
+" class="math-display" ></div>
+  </td><td class="equation-label">(1)</td></tr></table>
+<!--l. 13--><p class="nopar" >
+<!--l. 15--><p class="indent" >  Any <img 
+src="Portfolio-CRRA22x.svg" alt="at  " class="math";align="absmiddle"> NOT invested in the risky asset is assumed to be invested in a riskfree asset that
+earns return factor <img 
+src="Portfolio-CRRA23x.svg" alt="R =  er   " class="math";align="absmiddle">. Importantly, the consumer is assumed to have no labor
+income and to face no risk aside from that caused by their investment in the risky
+asset.<span class="footnote-mark"><a 
+href="Portfolio-CRRA5.html#fn4x0"><sup class="textsuperscript">4</sup></a></span><a 
+ id="x1-6f4"></a>  <img 
+src="Portfolio-CRRA24x.svg" alt=",  " class="math";align="absmiddle"><span class="footnote-mark"><a 
+href="Portfolio-CRRA6.html#fn5x0"><sup class="textsuperscript">5</sup></a></span><a 
+ id="x1-7f5"></a>  
+<!--l. 35--><p class="indent" >  Both papers consider a multiperiod optimization problem, but here we
+examine a consumer for whom period <img 
+src="Portfolio-CRRA25x.svg" alt="t  " class="math";align="absmiddle"> is the second-to-last period of
+life (the insights, and even the formulas, carry over to the multiperiod
+case).<span class="footnote-mark"><a 
+href="Portfolio-CRRA7.html#fn6x0"><sup class="textsuperscript">6</sup></a></span><a 
+ id="x1-8f6"></a>  
+<!--l. 40--><p class="indent" >  If the period-<img 
+src="Portfolio-CRRA26x.svg" alt="t  " class="math";align="absmiddle"> consumer invests proportion <img 
+src="Portfolio-CRRA27x.svg" alt="ς  " class="math";align="absmiddle"> in the risky asset, spending all available
+resources in the last period of life <img 
+src="Portfolio-CRRA28x.svg" alt="t + 1  " class="math";align="absmiddle"> will yield:
+  <table 
+class="equation"><tr><td><a 
+ id="x1-9r2"></a>
+  <div class="math-display" >
+<img 
+src="Portfolio-CRRA29x.svg" alt="ct+1 =  (R(1 − ς) + Rt+1 ς)at
+    =  (R + (R    − R )ς) a
+       ◟------◝t+◜1------◞  t
+             ≡ℜt+1
+" class="math-display" ><a 
+ id="x1-9r1"></a></div>
+  </td></tr></table>
+<!--l. 45--><p class="nopar" >
+where <img 
+src="Portfolio-CRRA30x.svg" alt="ℜ
+  t+1   " class="math";align="absmiddle"> is the realized arithmetic return factor for the portfolio.
+<!--l. 49--><p class="indent" >  The optimal portfolio share will be the one that maximizes expected utility:
+  <table 
+class="equation"><tr><td><a 
+ id="x1-10r2"></a>
+                                                                                     
+                                                                                     
+  <div class="math-display" >
+<img 
+src="Portfolio-CRRA31x.svg" alt="ς = arg max  𝔼 [u(c   )]
+        ς     t    t+1
+" class="math-display" ></div>
+  </td><td class="equation-label">(2)</td></tr></table>
+<!--l. 52--><p class="nopar" >
+and can be calculated numerically for any arbitrary distribution of rates of return.
+<!--l. 55--><p class="indent" >  <a 
+href="#XcvAppendix">Campbell and Viceira</a> (<a 
+href="#XcvAppendix">2002</a>) show that if we deﬁne the ‘equity premium’ as
+  <table 
+class="equation"><tr><td><a 
+ id="x1-11r3"></a>
+  <div class="math-display" >
+<img 
+src="Portfolio-CRRA32x.svg" alt="                        2
+φt+1 = rt+1 − r + (1 ∕2)σr
+" class="math-display" ></div>
+  </td><td class="equation-label">(3)</td></tr></table>
+<!--l. 58--><p class="nopar" >
+then for many distributions a good approximation to the portfolio
+rate of return (the log of the portfolio return factor) is obtained
+by<span class="footnote-mark"><a 
+href="Portfolio-CRRA8.html#fn7x0"><sup class="textsuperscript">7</sup></a></span><a 
+ id="x1-12f7"></a>  
+  <table 
+class="equation"><tr><td><a 
+ id="x1-13r4"></a>
+  <div class="math-display" >
+<img 
+src="Portfolio-CRRA33x.svg" alt="                    2      2  2
+𝔯t+1 =  r + ςφt+1 + ςσr∕2 − ς σr∕2.
+" class="math-display" ></div>
+                                                                                     
+                                                                                     
+  </td><td class="equation-label">(4)</td></tr></table>
+<!--l. 62--><p class="nopar" >
+<!--l. 64--><p class="indent" >  Using this approximation, the expectation as of date <img 
+src="Portfolio-CRRA34x.svg" alt="t  " class="math";align="absmiddle"> of utility at date <img 
+src="Portfolio-CRRA35x.svg" alt="t + 1  " class="math";align="absmiddle">
+is:<span class="footnote-mark"><a 
+href="Portfolio-CRRA9.html#fn8x0"><sup class="textsuperscript">8</sup></a></span><a 
+ id="x1-14f8"></a>  
+  <table 
+class="equation"><tr><td><a 
+ id="x1-16r5"></a>
+  <div class="math-display" >
+<img 
+src="Portfolio-CRRA37x.svg" alt="                    − 1     1− ρ (1− ρ)ς(1− ς)σ2∕2   [ ςφ   (1−ρ)]
+𝔼t [u(ct+1)] ≈ (1◟-−-ρ-)◝◜(atR-)--◞e----------r- 𝔼t-e--t+1----
+                  constant &#x003C; 0   ◟   excess retur◝n◜ utility factor ◞
+" class="math-display" ></div>
+  </td><td class="equation-label">(5)</td></tr></table>
+<!--l. 76--><p class="nopar" >
+where the ﬁrst term is a negative constant under the usual assumption that relative risk
+aversion <img 
+src="Portfolio-CRRA38x.svg" alt="ρ &#x003E; 1.  " class="math";align="absmiddle">
+                                                                                     
+                                                                                     
+<!--l. 79--><p class="indent" >  <a 
+ id="lognormal-returns"></a> For the special (but reasonable) case of a lognormally distributed return, we can make
+substantial further progress, by obtaining an analytical approximation to the numerical optimum. In
+this case <img 
+src="Portfolio-CRRA39x.svg" alt="ς(1 − ρ)φt+1 ∼ 𝒩 (ς(1 − ρ)(φ − σ2 ∕2),(ς(1 − ρ))2σ2)
+                                 r               r  " class="math";align="absmiddle"> (again using <a 
+href="https://www.econ2.jhu.edu/people/ccarroll/public/LectureNotes/MathFacts/MathFactsList#LogELogNormTimes" ><img 
+src="Portfolio-CRRA40x.svg" alt="[LogELogNormTimes  ]  " class="math";align="absmiddle"></a>).
+With a few extra lines of derivation we can show that the log of the expectation in (<a 
+href="#x1-16r5">5<!--tex4ht:ref: eq:exputil --></a>)
+is<span class="footnote-mark"><a 
+href="Portfolio-CRRA10.html#fn9x0"><sup class="textsuperscript">9</sup></a></span><a 
+ id="x1-17f9"></a>  
+  <table 
+class="equation"><tr><td><a 
+ id="x1-19r6"></a>
+  <div class="math-display" >
+<img 
+src="Portfolio-CRRA42x.svg" alt="      [         ]
+log𝔼t  eςφt+1(1−ρ) = (1 − ρ)ςφ − (1 − ρ)ς(1 − ς)σ2r∕2 − ρ(1 − ρ)ς2σ2r∕2.
+" class="math-display" ></div>
+  </td><td class="equation-label">(6)</td></tr></table>
+<!--l. 89--><p class="nopar" >
+<!--l. 91--><p class="indent" >  Substitute from (<a 
+href="#x1-19r6">6<!--tex4ht:ref: eq:Ex --></a>) for the log of the expectation in (<a 
+href="#x1-16r5">5<!--tex4ht:ref: eq:exputil --></a>) and note that the resulting
+expression simpliﬁes because it contains <img 
+src="Portfolio-CRRA43x.svg" alt="(1 − ρ)ςσ2r∕2 − (1 − ρ)ςσ2r∕2 = 0  " class="math";align="absmiddle">; thus the log of the
+‘excess return utility factor’ in (<a 
+href="#x1-16r5">5<!--tex4ht:ref: eq:exputil --></a>) is
+  <table 
+class="equation"><tr><td><a 
+ id="x1-20r7"></a>
+                                                                                     
+                                                                                     
+  <div class="math-display" >
+<img 
+src="Portfolio-CRRA44x.svg" alt="                         2 2
+− (ρ − 1)ςφ − (ρ − 1)(− ρς σr∕2 )
+" class="math-display" ></div>
+  </td><td class="equation-label">(7)</td></tr></table>
+<!--l. 97--><p class="nopar" >
+and the <img 
+src="Portfolio-CRRA45x.svg" alt="ς  " class="math";align="absmiddle"> that minimizes the log will also minimize the level; minimizing this when <img 
+src="Portfolio-CRRA46x.svg" alt="ρ &#x003E;  1  " class="math";align="absmiddle"> is
+equivalent to maximizing the terms multiplied by <img 
+src="Portfolio-CRRA47x.svg" alt="− (ρ − 1)  " class="math";align="absmiddle">, so our problem reduces
+to
+  <table 
+class="equation-star"><tr><td>
+  <div class="math-display" >
+<img 
+src="Portfolio-CRRA48x.svg" alt="              2 2
+maxς   ςφ − ρ ςσ r∕2
+" class="math-display" ></div>
+  </td></tr></table>
+<!--l. 104--><p class="nopar" >
+with FOC <a 
+ id="riskyshareMS"></a>
+  <table 
+class="equation"><tr><td><a 
+ id="x1-21r8"></a>
+  <div class="math-display" >
+<img 
+src="Portfolio-CRRA49x.svg" alt="φ − ςρσ2r = 0
+           (  φ  )
+       ς =   ----  .
+             ρσ2r
+" class="math-display" ></div>
+  </td><td class="equation-label">(8)</td></tr></table>
+                                                                                     
+                                                                                     
+<!--l. 109--><p class="nopar" >
+<!--l. 111--><p class="indent" >  Equation (<a 
+href="#x1-21r8">8<!--tex4ht:ref: eq:riskyshareMS --></a>)<span class="footnote-mark"><a 
+href="Portfolio-CRRA11.html#fn10x0"><sup class="textsuperscript">10</sup></a></span><a 
+ id="x1-22f10"></a>  
+says that the consumer allocates a higher proportion of net worth to the high-risk, high-return
+asset when
+      <ol  class="enumerate1" >
+      <li 
+  class="enumerate" id="x1-24x1">the equity premium <img 
+src="Portfolio-CRRA50x.svg" alt="φ  " class="math";align="absmiddle"> is greater
+      </li>
+      <li 
+  class="enumerate" id="x1-26x2">the consumer is less risk averse (<img 
+src="Portfolio-CRRA51x.svg" alt="ρ  " class="math";align="absmiddle"> is lower)
+      </li>
+      <li 
+  class="enumerate" id="x1-28x3">riskiness <img 
+src="Portfolio-CRRA52x.svg" alt="σ2r  " class="math";align="absmiddle"> is less</li></ol>
+<!--l. 123--><p class="noindent" >If there is no excess return (<img 
+src="Portfolio-CRRA53x.svg" alt="φ = 0  " class="math";align="absmiddle">), nothing will be put in the risky asset. Similarly, if risk
+aversion or the variance of the risk is inﬁnity, again nothing will be put in the risky
+asset.<span class="footnote-mark"><a 
+href="Portfolio-CRRA12.html#fn11x0"><sup class="textsuperscript">11</sup></a></span><a 
+ id="x1-29f11"></a>  
+<!--l. 129--><p class="indent" >  This formula hints at the existence of an ‘equity premium puzzle’ (<a 
+href="#XmehraPrescottPuzzle">Mehra and
+Prescott</a> (<a 
+href="#XmehraPrescottPuzzle">1985</a>)). Interpreting the risky asset as the aggregate stock market, the annual
+standard deviation of the log of U.S. stock returns has historically been about <img 
+src="Portfolio-CRRA54x.svg" alt="σr = 0.2  " class="math";align="absmiddle">
+yielding <img 
+src="Portfolio-CRRA55x.svg" alt="σ2 = 0.04
+ r  " class="math";align="absmiddle">. Mehra and Prescott claim that the equity premium has been something
+like <img 
+src="Portfolio-CRRA56x.svg" alt="φ =  0.08  " class="math";align="absmiddle"> (eight percent). With risk aversion of <img 
+src="Portfolio-CRRA57x.svg" alt="ρ = 2  " class="math";align="absmiddle"> this formula implies that the
+share of risky assets in your portfolio should be <img 
+src="Portfolio-CRRA58x.svg" alt="0.08∕0.08  " class="math";align="absmiddle"> or 100 percent! The fact that most
+people have less than 100 percent of their wealth invested in stocks is the ‘stockholding
+puzzle,’ the microeconomic manifestation of the equity premium puzzle (<a 
+href="#Xhaliassos&bertaut:fewholdstocks">Haliassos and
+Bertaut</a> (<a 
+href="#Xhaliassos&bertaut:fewholdstocks">1995</a>)).
+<!--l. 142--><p class="indent" >  To avoid the problems caused by a prediction of a risky portfolio share greater than one, we
+can calibrate the model with more modest expectations for the equity premium. Some
+researchers have argued that when evidence for other countries and longer time periods is
+taken into account, a plausible average value of the premium might be as low as
+three percent. The ﬁgures show the relationship between the portfolio share and
+relative risk aversion for a calibration that assumes a modest premium of 3 percent
+and a large standard deviation of <img 
+src="Portfolio-CRRA59x.svg" alt="σ = 0.2  " class="math";align="absmiddle">. Even when risks are this high and the
+premium is this low, if relative risk aversion is close to logarithmic (<img 
+src="Portfolio-CRRA60x.svg" alt="ρ = 1  " class="math";align="absmiddle">) the investor
+wants to put well over half of the portfolio in the risky asset. Only for values of
+risk aversion greater than 2 does the predicted portfolio share reach plausible small
+values.
+                                                                                     
+                                                                                     
+<!--l. 157--><p class="indent" >  But remember that these calculations are all assuming that the consumer’s <span 
+class="ecti-1200">entire</span>
+consumption spending is ﬁnanced by asset income. If the consumer has other income (for
+example, labor or pension income) which is not perfectly correlated with returns on the risky
+asset, they should be willing to take more risk. Since, for most consumers, most of their future
+consumption will be ﬁnanced from labor or transfer income, it is not surprising to learn that
+models calibrated to actual data on capital and noncapital income dynamics imply that people
+should be investing most of their non-human wealth in the risky asset (with reasonable values
+of <img 
+src="Portfolio-CRRA61x.svg" alt="ρ  " class="math";align="absmiddle">).
+<!--l. 163--><p class="indent" >  A ﬁnal interesting question is what the expected rate of return on the consumer’s portfolio
+will be once the portfolio share in risky assets has been chosen optimally. Note ﬁrst that (<a 
+href="#x1-1004r14">14<!--tex4ht:ref: eq:rportDist --></a>)
+implies that
+  <table 
+class="equation"><tr><td><a 
+ id="x1-30r9"></a>
+  <div class="math-display" >
+<img 
+src="Portfolio-CRRA62x.svg" alt="       𝔯t+1−r
+log 𝔼t[e     ] = ςφ
+" class="math-display" ></div>
+  </td><td class="equation-label">(9)</td></tr></table>
+<!--l. 169--><p class="nopar" >
+while the variance of the log of the excess return factor for the portfolio is <img 
+src="Portfolio-CRRA63x.svg" alt=" 2    2 2
+σ𝔯 = ς σr.  " class="math";align="absmiddle">
+Substituting the solution (<a 
+href="#x1-21r8">8<!--tex4ht:ref: eq:riskyshareMS --></a>) for <img 
+src="Portfolio-CRRA64x.svg" alt="ς  " class="math";align="absmiddle"> into (<a 
+href="#x1-30r9">9<!--tex4ht:ref: eq:eport --></a>), we have
+  <table 
+class="equation"><tr><td><a 
+ id="x1-31r10"></a>
+  <div class="math-display" >
+<img 
+src="Portfolio-CRRA65x.svg" alt="     (     )
+        φ2
+ςφ =   ---2
+       ρ σr
+   = (φ ∕σr)2∕ρ
+" class="math-display" ></div>
+  </td><td class="equation-label">(10)</td></tr></table>
+<!--l. 174--><p class="nopar" >
+which is an interesting formula for the excess return of the optimally chosen portfolio because
+the object <img 
+src="Portfolio-CRRA66x.svg" alt="φ∕σ
+    r  " class="math";align="absmiddle"> (the excess return divided by the standard deviation) is a well-known tool in
+                                                                                     
+                                                                                     
+ﬁnance for evaluating the tradeoﬀ between risk and return (the ‘Sharpe ratio’). Equation (<a 
+href="#x1-31r10">10<!--tex4ht:ref: eq:rportPremOpt --></a>)
+says that the consumer will choose a portfolio that earns an excess return that is directly
+related to the (square of the) Sharpe ratio and inversely related to the risk aversion coeﬃcient.
+Higher reward (per unit of risk) convinces the consumer to take the risk necessary to earn
+higher returns; but higher risk aversion convinces them to sacriﬁce (risky) return for
+safety.
+<!--l. 186--><p class="indent" >  Finally, we can ask what eﬀect an exogenous increase in the risk of the risky
+asset has on the endogenous riskiness of the portfolio once the consumer has chosen
+optimally. The answer is surprising: The variance of the optimally-chosen portfolio
+is
+  <table 
+class="equation"><tr><td><a 
+ id="x1-32r11"></a>
+  <div class="math-display" >
+<img 
+src="Portfolio-CRRA67x.svg" alt="       (  φ )2
+ς2σ2r =   --2-  σ2r
+       ( ρσr   )
+         (φ∕ρ)2-
+    =      σ2
+            r
+" class="math-display" ></div>
+  </td><td class="equation-label">(11)</td></tr></table>
+<!--l. 193--><p class="nopar" >
+which is actually <span 
+class="ecti-1200">smaller </span>when <img 
+src="Portfolio-CRRA68x.svg" alt="σ2
+ r  " class="math";align="absmiddle"> is larger. Upon reﬂection, maybe this makes sense.
+Imagine that the consumer had adjusted his portfolio share in the risky asset downward just
+enough to restore the portfolio’s riskiness to its original level before the increase in risk. The
+consumer would now be bearing the same degree of risk but for a lower (mean) rate of return
+(because of his reduction in exposure to the risky asset). It makes intuitive sense that the
+consumer will not be satisﬁed with this “same riskiness, lower return” outcome and therefore
+that the undesirableness of the risky asset must have increased enough to make him want to
+hold even less than the amount that would return his portfolio’s riskiness to its original
+value.
+                                                                                     
+                                                                                     
+  <div class="figure" 
+>
+                                                                                     
+                                                                                     
+                                                                                     
+                                                                                     
+<a 
+ id="x1-33r1"></a>
+<a 
+ id="x1-34"></a>
+<figcaption class="caption" ><span class="id"><span 
+class="ecbx-1095">Figure</span><span 
+class="ecbx-1095"> 1</span><span 
+class="ecbx-1095">  </span> </span><span  
+class="content">Approximate Risky Share <img 
+src="Portfolio-CRRA69x.svg" alt="ς  " class="math";align="absmiddle"> Declines as Relative Risk Aversion <img 
+src="Portfolio-CRRA70x.svg" alt="ρ  " class="math";align="absmiddle"> Increases</span></figcaption><!--tex4ht:label?: x1-33r -->
+<!--l. 202--><p class="noindent" >  <img 
+src="./Figures/ShareVsCRRA.svg" alt="PIC"  
+style="width:96.76%">
+                                                                                     
+                                                                                     
+  </div>
+  <div class="figure" 
+>
+                                                                                     
+                                                                                     
+                                                                                     
+                                                                                     
+<a 
+ id="x1-35r2"></a>
+<a 
+ id="x1-36"></a>
+<figcaption class="caption" ><span class="id"><span 
+class="ecbx-1095">Figure</span><span 
+class="ecbx-1095"> 2</span><span 
+class="ecbx-1095">  </span>  </span><span  
+class="content">The Approximation Error for the Portfolio Share in Risky Assets <img 
+src="Portfolio-CRRA71x.svg" alt="ς  " class="math";align="absmiddle"> Is
+Small                                                                                </span></figcaption><!--tex4ht:label?: x1-35r -->
+<!--l. 208--><p class="noindent" >  <img 
+src="./Figures/ShareApproxErr.svg" alt="PIC"  
+style="width:96.76%">
+<div class="flushleft" 
+>
+<!--l. 209--><p class="noindent" >
+ <span 
+class="ecrm-1000">Note: The approximation error is computed by solving for the exactly optimal portfolio share</span>
+<span 
+class="ecrm-1000">numerically. See the </span><span 
+class="ectt-1000">Portfolio-CRRA-Derivations.nb </span><span 
+class="ecrm-1000">Mathematica notebook for details.</span></div>
+                                                                                     
+                                                                                     
+  </div>
+                                                                                     
+                                                                                     
+  <h3 class="sectionHead"><span class="titlemark">A  </span> <a 
+ id="x1-1000A"></a>The <a 
+href="#XcvAppendix">Campbell and Viceira</a> (<a 
+href="#XcvAppendix">2002</a>) Approximation</h3>
+<!--l. 250--><p class="noindent" >For mathematical analysis (especially under the assumption of CRRA utility) it would be
+convenient if we could approximate the realized arithmetic portfolio return factor by the log of
+the realized geometric return factor <img 
+src="Portfolio-CRRA72x.svg" alt="         1−ς  ς
+ℜt+1 = R    R t+1   " class="math";align="absmiddle">, because then the logarithm of the
+return factor would be <img 
+src="Portfolio-CRRA73x.svg" alt="𝔯t+1 =  r(1 − ς) + rt+1 ς = r + (rt+1 − r)ς = r + φt+1ς  " class="math";align="absmiddle"> and the realized
+‘portfolio excess return’ would be simply <img 
+src="Portfolio-CRRA74x.svg" alt="𝔯t+1 − r = ςφt+1   " class="math";align="absmiddle">. Unfortunately, for <img 
+src="Portfolio-CRRA75x.svg" alt="ς  " class="math";align="absmiddle"> values well
+away from 0 and 1 (that is, for any <span 
+class="ecti-1200">interesting </span>values of portfolio shares), the log of the
+geometric mean is a badly biased approximation to the log of the arithmetic mean when the
+variance of the risky asset is substantial.
+<!--l. 264--><p class="indent" >  <a 
+href="#XcvAppendix">Campbell and Viceira</a> (<a 
+href="#XcvAppendix">2002</a>)’s propose instead
+  <table 
+class="equation"><tr><td><a 
+ id="x1-1001r12"></a>
+  <div class="math-display" >
+<img 
+src="Portfolio-CRRA76x.svg" alt="                    2      2  2
+𝔯t+1 ≈  r + ςφt+1 + ςσr∕2 − ς σ r∕2.
+" class="math-display" ></div>
+  </td><td class="equation-label">(12)</td></tr></table>
+<!--l. 267--><p class="nopar" >
+<!--l. 269--><p class="indent" >  To see one virtue of this approximation,<span class="footnote-mark"><a 
+href="Portfolio-CRRA13.html#fn12x0"><sup class="textsuperscript">12</sup></a></span><a 
+ id="x1-1002f12"></a>  
+note (using <a 
+href="https://www.econ2.jhu.edu/people/ccarroll/public/LectureNotes/MathFacts/MathFactsList#NormTimes" ><img 
+src="Portfolio-CRRA77x.svg" alt="[NormTimes ]  " class="math";align="absmiddle"></a> and <a 
+href="https://www.econ2.jhu.edu/people/ccarroll/public/LectureNotes/MathFacts/MathFactsList#SumNormsIsNorm" ><img 
+src="Portfolio-CRRA78x.svg" alt="[SumNormsIsNorm   ]  " class="math";align="absmiddle"></a>) that since the mean and variance of
+<img 
+src="Portfolio-CRRA79x.svg" alt="φt+1ς  " class="math";align="absmiddle"> are respectively <img 
+src="Portfolio-CRRA80x.svg" alt="ς(r − σ2r∕2 − r)  " class="math";align="absmiddle"> and <img 
+src="Portfolio-CRRA81x.svg" alt="ς2σ2r  " class="math";align="absmiddle">, <a 
+href="https://www.econ2.jhu.edu/people/ccarroll/public/LectureNotes/MathFacts/MathFactsList#LogELogNormTimes" ><img 
+src="Portfolio-CRRA82x.svg" alt="[LogELogNormTimes   ]  " class="math";align="absmiddle"></a> implies
+that
+  <table 
+class="equation"><tr><td><a 
+ id="x1-1003r13"></a>
+  <div class="math-display" >
+<img 
+src="Portfolio-CRRA83x.svg" alt="log𝔼t [eφt+1ς] = ς(r − r − σ2r∕2) + ς2σ2r∕2
+                                                                                     
+                                                                                     
+" class="math-display" ></div>
+  </td><td class="equation-label">(13)</td></tr></table>
+<!--l. 273--><p class="nopar" >
+which means that exponentiating then taking the expectation then taking the logarithm of (<a 
+href="#x1-13r4">4<!--tex4ht:ref: eq:rportCV --></a>)
+gives
+  <table 
+class="equation"><tr><td><a 
+ id="x1-1004r14"></a>
+  <div class="math-display" >
+<img 
+src="Portfolio-CRRA84x.svg" alt="    log𝔼t[e𝔯t+1] = log er + log 𝔼t[eςφt+1] + log eςσ2r∕2−ς2σr2∕2
+                                2       2 2       2      2  2
+                = r + ς(r − r − σr∕2) + ς σr∕2 + ςσr∕2 − ς σr∕2
+log 𝔼t[e𝔯t+1] − r = ς(r − r)
+" class="math-display" ></div>
+  </td><td class="equation-label">(14)</td></tr></table>
+<!--l. 284--><p class="nopar" >
+or, in words: The expected excess portfolio return is equal to the proportion
+invested in the risky asset times the expected return of the risky
+asset.<span class="footnote-mark"><a 
+href="Portfolio-CRRA14.html#fn13x0"><sup class="textsuperscript">13</sup></a></span><a 
+ id="x1-1005f13"></a>  
+                                                                                     
+                                                                                     
+  <h3 class="likesectionHead"><a 
+ id="x1-2000A"></a>References</h3>
+<!--l. 12--><p class="noindent" >
+  <div class="thebibliography">
+  <p class="bibitem" ><span class="biblabel">
+<a 
+ id="XaclvJoy"></a><span class="bibsp">   </span></span><span 
+class="eccc1200-"><span 
+class="small-caps">A</span><span 
+class="small-caps">m</span><span 
+class="small-caps">e</span><span 
+class="small-caps">r</span><span 
+class="small-caps">i</span><span 
+class="small-caps">k</span><span 
+class="small-caps">s</span><span 
+class="small-caps">,</span>       <span 
+class="small-caps">J</span><span 
+class="small-caps">o</span><span 
+class="small-caps">h</span><span 
+class="small-caps">n</span><span 
+class="small-caps">,</span>       <span 
+class="small-caps">A</span><span 
+class="small-caps">n</span><span 
+class="small-caps">d</span><span 
+class="small-caps">r</span><span 
+class="small-caps">e</span><span 
+class="small-caps">w</span>       <span 
+class="small-caps">C</span><span 
+class="small-caps">a</span><span 
+class="small-caps">p</span><span 
+class="small-caps">l</span><span 
+class="small-caps">i</span><span 
+class="small-caps">n</span><span 
+class="small-caps">,</span>       <span 
+class="small-caps">S</span><span 
+class="small-caps">t</span><span 
+class="small-caps">e</span><span 
+class="small-caps">v</span><span 
+class="small-caps">e</span><span 
+class="small-caps">n</span>       <span 
+class="small-caps">L</span><span 
+class="small-caps">a</span><span 
+class="small-caps">u</span><span 
+class="small-caps">f</span><span 
+class="small-caps">e</span><span 
+class="small-caps">r</span><span 
+class="small-caps">,</span></span>
+  <span 
+class="eccc1200-"><span 
+class="small-caps">a</span><span 
+class="small-caps">n</span><span 
+class="small-caps">d</span> <span 
+class="small-caps">S</span><span 
+class="small-caps">t</span><span 
+class="small-caps">i</span><span 
+class="small-caps">j</span><span 
+class="small-caps">n</span> <span 
+class="small-caps">V</span><span 
+class="small-caps">a</span><span 
+class="small-caps">n</span></span><span 
+class="eccc1200-"> <span 
+class="small-caps">N</span><span 
+class="small-caps">i</span><span 
+class="small-caps">e</span><span 
+class="small-caps">u</span><span 
+class="small-caps">w</span><span 
+class="small-caps">e</span><span 
+class="small-caps">r</span><span 
+class="small-caps">b</span><span 
+class="small-caps">u</span><span 
+class="small-caps">r</span><span 
+class="small-caps">g</span><span 
+class="small-caps">h</span> </span>(2011): “The Joy Of Giving Or Assisted Living?
+  Using Strategic Surveys To Separate Public Care Aversion From Bequest Motives,”
+  <span 
+class="ecti-1200">The Journal of Finance</span>, 66(2), 519–561.
+  </p>
+  <p class="bibitem" ><span class="biblabel">
+<a 
+ id="XcvAppendix"></a><span class="bibsp">   </span></span><span 
+class="eccc1200-"><span 
+class="small-caps">C</span><span 
+class="small-caps">a</span><span 
+class="small-caps">m</span><span 
+class="small-caps">p</span><span 
+class="small-caps">b</span><span 
+class="small-caps">e</span><span 
+class="small-caps">l</span><span 
+class="small-caps">l</span><span 
+class="small-caps">,</span> <span 
+class="small-caps">J</span><span 
+class="small-caps">o</span><span 
+class="small-caps">h</span><span 
+class="small-caps">n</span></span><span 
+class="eccc1200-"> <span 
+class="small-caps">Y</span><span 
+class="small-caps">.</span><span 
+class="small-caps">,</span> <span 
+class="small-caps">a</span><span 
+class="small-caps">n</span><span 
+class="small-caps">d</span> <span 
+class="small-caps">L</span><span 
+class="small-caps">u</span><span 
+class="small-caps">i</span><span 
+class="small-caps">s</span></span><span 
+class="eccc1200-"> <span 
+class="small-caps">M</span><span 
+class="small-caps">.</span> <span 
+class="small-caps">V</span><span 
+class="small-caps">i</span><span 
+class="small-caps">c</span><span 
+class="small-caps">e</span><span 
+class="small-caps">i</span><span 
+class="small-caps">r</span><span 
+class="small-caps">a</span> </span>(2002): <span 
+class="ecti-1200">Appendix to ‘Strategic Asset</span>
+  <span 
+class="ecti-1200">Allocation: Portfolio Choice for Long-Term Investors’</span>. Oxford University Press, USA,
+  <a 
+href="https://scholar.harvard.edu/files/campbell/files/bookapp.pdf" >https://scholar.harvard.edu/ﬁles/campbell/ﬁles/bookapp.pdf</a>.
+  </p>
+  <p class="bibitem" ><span class="biblabel">
+<a 
+ id="XSolvingMicroDSOPs"></a><span class="bibsp">   </span></span><span 
+class="eccc1200-"><span 
+class="small-caps">C</span><span 
+class="small-caps">a</span><span 
+class="small-caps">r</span><span 
+class="small-caps">r</span><span 
+class="small-caps">o</span><span 
+class="small-caps">l</span><span 
+class="small-caps">l</span><span 
+class="small-caps">,</span> <span 
+class="small-caps">C</span><span 
+class="small-caps">h</span><span 
+class="small-caps">r</span><span 
+class="small-caps">i</span><span 
+class="small-caps">s</span><span 
+class="small-caps">t</span><span 
+class="small-caps">o</span><span 
+class="small-caps">p</span><span 
+class="small-caps">h</span><span 
+class="small-caps">e</span><span 
+class="small-caps">r</span></span><span 
+class="eccc1200-"> <span 
+class="small-caps">D</span><span 
+class="small-caps">.</span> </span>(2023): “Solving Microeconomic Dynamic Stochastic
+  Optimization Problems,” <span 
+class="ecti-1200">Econ-ARK REMARK</span>.
+  </p>
+  <p class="bibitem" ><span class="biblabel">
+<a 
+ id="Xhaliassos&bertaut:fewholdstocks"></a><span class="bibsp">   </span></span><span 
+class="eccc1200-"><span 
+class="small-caps">H</span><span 
+class="small-caps">a</span><span 
+class="small-caps">l</span><span 
+class="small-caps">i</span><span 
+class="small-caps">a</span><span 
+class="small-caps">s</span><span 
+class="small-caps">s</span><span 
+class="small-caps">o</span><span 
+class="small-caps">s</span><span 
+class="small-caps">,</span>  <span 
+class="small-caps">M</span><span 
+class="small-caps">i</span><span 
+class="small-caps">c</span><span 
+class="small-caps">h</span><span 
+class="small-caps">a</span><span 
+class="small-caps">e</span><span 
+class="small-caps">l</span><span 
+class="small-caps">,</span>  <span 
+class="small-caps">a</span><span 
+class="small-caps">n</span><span 
+class="small-caps">d</span>  <span 
+class="small-caps">C</span><span 
+class="small-caps">a</span><span 
+class="small-caps">r</span><span 
+class="small-caps">o</span><span 
+class="small-caps">l</span>  <span 
+class="small-caps">B</span><span 
+class="small-caps">e</span><span 
+class="small-caps">r</span><span 
+class="small-caps">t</span><span 
+class="small-caps">a</span><span 
+class="small-caps">u</span><span 
+class="small-caps">t</span> </span>(1995):  “Why  Do  So  Few  Hold
+  Stocks?,” <span 
+class="ecti-1200">The Economic Journal</span>, 105, 1110–1129.
+  </p>
+  <p class="bibitem" ><span class="biblabel">
+<a 
+ id="XmehraPrescottPuzzle"></a><span class="bibsp">   </span></span><span 
+class="eccc1200-"><span 
+class="small-caps">M</span><span 
+class="small-caps">e</span><span 
+class="small-caps">h</span><span 
+class="small-caps">r</span><span 
+class="small-caps">a</span><span 
+class="small-caps">,</span> <span 
+class="small-caps">R</span><span 
+class="small-caps">a</span><span 
+class="small-caps">j</span><span 
+class="small-caps">n</span><span 
+class="small-caps">i</span><span 
+class="small-caps">s</span><span 
+class="small-caps">h</span><span 
+class="small-caps">,</span> <span 
+class="small-caps">a</span><span 
+class="small-caps">n</span><span 
+class="small-caps">d</span> <span 
+class="small-caps">E</span><span 
+class="small-caps">d</span><span 
+class="small-caps">w</span><span 
+class="small-caps">a</span><span 
+class="small-caps">r</span><span 
+class="small-caps">d</span></span><span 
+class="eccc1200-"> <span 
+class="small-caps">C</span><span 
+class="small-caps">.</span> <span 
+class="small-caps">P</span><span 
+class="small-caps">r</span><span 
+class="small-caps">e</span><span 
+class="small-caps">s</span><span 
+class="small-caps">c</span><span 
+class="small-caps">o</span><span 
+class="small-caps">t</span><span 
+class="small-caps">t</span> </span>(1985): “The Equity Premium: A
+  Puzzle,” <span 
+class="ecti-1200">Journal of Monetary Economics</span>, 15, 145–61.
+  </p>
+  <p class="bibitem" ><span class="biblabel">
+<a 
+ id="Xmerton:restat"></a><span class="bibsp">   </span></span><span 
+class="eccc1200-"><span 
+class="small-caps">M</span><span 
+class="small-caps">e</span><span 
+class="small-caps">r</span><span 
+class="small-caps">t</span><span 
+class="small-caps">o</span><span 
+class="small-caps">n</span><span 
+class="small-caps">,</span> <span 
+class="small-caps">R</span><span 
+class="small-caps">o</span><span 
+class="small-caps">b</span><span 
+class="small-caps">e</span><span 
+class="small-caps">r</span><span 
+class="small-caps">t</span></span><span 
+class="eccc1200-"> <span 
+class="small-caps">C</span><span 
+class="small-caps">.</span> </span>(1969): “Lifetime Portfolio Selection under Uncertainty: The
+  Continuous Time Case,” <span 
+class="ecti-1200">Review of Economics and Statistics</span>, 51, 247–257.
+  </p>
+  <p class="bibitem" ><span class="biblabel">
+<a 
+ id="Xsamuelson:portfolio"></a><span class="bibsp">   </span></span><span 
+class="eccc1200-"><span 
+class="small-caps">S</span><span 
+class="small-caps">a</span><span 
+class="small-caps">m</span><span 
+class="small-caps">u</span><span 
+class="small-caps">e</span><span 
+class="small-caps">l</span><span 
+class="small-caps">s</span><span 
+class="small-caps">o</span><span 
+class="small-caps">n</span><span 
+class="small-caps">,</span> <span 
+class="small-caps">P</span><span 
+class="small-caps">a</span><span 
+class="small-caps">u</span><span 
+class="small-caps">l</span></span><span 
+class="eccc1200-"> <span 
+class="small-caps">A</span><span 
+class="small-caps">.</span> </span>(1969): “Lifetime Portfolio Selection by Dynamic Stochastic
+  Programming,” <span 
+class="ecti-1200">Review of Economics and Statistics</span>, 51, 239–46.
+  </p>
+  <p class="bibitem" ><span class="biblabel">
+<a 
+ id="Xsamuelson1979we"></a><span class="bibsp">   </span></span><span 
+class="eccc1200-"><span 
+class="small-caps">S</span><span 
+class="small-caps">a</span><span 
+class="small-caps">m</span><span 
+class="small-caps">u</span><span 
+class="small-caps">e</span><span 
+class="small-caps">l</span><span 
+class="small-caps">s</span><span 
+class="small-caps">o</span><span 
+class="small-caps">n</span><span 
+class="small-caps">,</span> <span 
+class="small-caps">P</span><span 
+class="small-caps">a</span><span 
+class="small-caps">u</span><span 
+class="small-caps">l</span></span><span 
+class="eccc1200-"> <span 
+class="small-caps">A</span> </span>(1979): “Why we should not make mean log of wealth big
+  though years to act are long,” <span 
+class="ecti-1200">Journal of Banking and Finance</span>, 3(4), 305–307.
+                                                                                     
+                                                                                     
+</p>
+  </div>
+   
+</body> 
+</html>
+                                                                                     
+
+
